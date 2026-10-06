@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首爾 4天3夜質感漫遊 | Seoul Travel Itinerary</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        japandi: {
+                            bg: '#FBFBFA',
+                            card: '#FFFFFF',
+                            primary: '#2D3732',
+                            accent: '#C29B78',
+                            secondary: '#8C8275',
+                            light: '#F4F1EA',
+                            border: '#E8E4DD'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+            background-color: #FBFBFA;
+            color: #2D3732;
+        }
+        /* Custom scrollbar for minimalist feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F4F1EA;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C29B78;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-japandi-bg min-h-screen flex flex-col selection:bg-japandi-accent selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-japandi-card/90 backdrop-blur-md border-b border-japandi-border transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-japandi-accent flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-plane-departure text-sm"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-wider text-japandi-primary block">SEOUL 2026</span>
+                    <span class="text-xs text-japandi-secondary tracking-widest uppercase">4 Days 3 Nights</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-japandi-primary">
+                <a href="#overview" class="hover:text-japandi-accent transition-colors">行程總覽</a>
+                <a href="#itinerary" class="hover:text-japandi-accent transition-colors">每日行程</a>
+                <a href="#guide" class="hover:text-japandi-accent transition-colors">住宿與交通</a>
+                <a href="#toolkit" class="hover:text-japandi-accent transition-colors">實用小工具</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center space-x-3">
+                <button onclick="openChecklistModal()" class="relative p-2.5 rounded-full bg-japandi-light hover:bg-japandi-accent hover:text-white transition-all text-japandi-primary" title="收藏與打勾清單">
+                    <i class="fa-solid fa-check-to-slot text-base"></i>
+                    <span id="badge-count" class="absolute -top-1 -right-1 w-5 h-5 bg-japandi-accent text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">0</span>
+                </button>
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-full bg-japandi-light text-japandi-primary">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-japandi-card border-b border-japandi-border px-4 pt-2 pb-6 space-y-3">
+            <a href="#overview" onclick="toggleMobileMenu()" class="block py-2 text-japandi-primary font-medium border-b border-japandi-border/50">行程總覽</a>
+            <a href="#itinerary" onclick="toggleMobileMenu()" class="block py-2 text-japandi-primary font-medium border-b border-japandi-border/50">每日行程</a>
+            <a href="#guide" onclick="toggleMobileMenu()" class="block py-2 text-japandi-primary font-medium border-b border-japandi-border/50">住宿與交通</a>
+            <a href="#toolkit" onclick="toggleMobileMenu()" class="block py-2 text-japandi-primary font-medium">實用小工具</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-japandi-light py-20 lg:py-28 overflow-hidden border-b border-japandi-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-japandi-card border border-japandi-border text-xs font-semibold tracking-wide text-japandi-secondary uppercase shadow-xs">
+                        <i class="fa-solid fa-location-dot text-japandi-accent"></i>
+                        <span>South Korea • Seoul</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-japandi-primary leading-tight">
+                        首爾美學漫游<br><span class="text-japandi-accent font-light">4天3夜質感之旅</span>
+                    </h1>
+                    <p class="text-japandi-secondary text-base sm:text-lg max-w-xl leading-relaxed font-light">
+                        結合傳統宮闕、文青咖啡廳、質感選物店與道地美食。精心規劃的完美節奏，帶您體驗首爾最迷人的現代與日常風情。
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#itinerary" class="px-8 py-3.5 rounded-full bg-japandi-primary text-white font-medium hover:bg-japandi-accent transition-all shadow-md flex items-center space-x-2">
+                            <span>展開每日行程</span>
+                            <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                        <a href="#guide" class="px-8 py-3.5 rounded-full bg-japandi-card border border-japandi-border text-japandi-primary font-medium hover:bg-japandi-light transition-all shadow-xs">
+                            交通與住宿指南
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-japandi-card">
+                            <img src="https://images.unsplash.com/photo-1538485399081-02be37760e9d?auto=format&fit=crop&w=800&q=80" alt="Seoul Cityscape" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x600/F4F1EA/8C8275?text=Seoul+Travel'">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-japandi-card p-4 rounded-2xl shadow-xl border border-japandi-border hidden sm:flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-japandi-light flex items-center justify-center text-japandi-accent font-bold text-xl">
+                                4D
+                            </div>
+                            <div>
+                                <p class="text-xs text-japandi-secondary uppercase font-semibold">精選節奏</p>
+                                <p class="text-sm font-bold text-japandi-primary">宮古風情 x 潮流聖水</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trip Overview Section -->
+        <section id="overview" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-xs font-bold text-japandi-accent tracking-widest uppercase">Overview</span>
+                <h2 class="text-3xl font-bold text-japandi-primary">行程總覽</h2>
+                <p class="text-japandi-secondary text-sm">四天三夜精華速覽，點擊下方各天數查看詳細景點與美味推薦</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Day 1 Card -->
+                <a href="#day1" class="group bg-japandi-card rounded-2xl p-6 border border-japandi-border shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-light text-japandi-accent">DAY 1</span>
+                            <i class="fa-solid fa-landmark text-japandi-secondary group-hover:text-japandi-accent transition-colors"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-japandi-primary mb-2 group-hover:text-japandi-accent transition-colors">歷史與文藝漫步</h3>
+                        <p class="text-xs text-japandi-secondary leading-relaxed">仁川機場抵達 -> 弘大民宿 check-in -> 景福宮與北村韓屋村 -> 三清洞散策</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-japandi-border flex items-center justify-between text-xs font-semibold text-japandi-accent">
+                        <span>查看詳情</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+
+                <!-- Day 2 Card -->
+                <a href="#day2" class="group bg-japandi-card rounded-2xl p-6 border border-japandi-border shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-light text-japandi-accent">DAY 2</span>
+                            <i class="fa-solid fa-mug-hot text-japandi-secondary group-hover:text-japandi-accent transition-colors"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-japandi-primary mb-2 group-hover:text-japandi-accent transition-colors">潮流聖水洞與夜景</h3>
+                        <p class="text-xs text-japandi-secondary leading-relaxed">聖水洞文青咖啡街與選物店 -> 廣藏市場傳統小吃 -> 東大門設計廣場 (DDP)</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-japandi-border flex items-center justify-between text-xs font-semibold text-japandi-accent">
+                        <span>查看詳情</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+
+                <!-- Day 3 Card -->
+                <a href="#day3" class="group bg-japandi-card rounded-2xl p-6 border border-japandi-border shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-light text-japandi-accent">DAY 3</span>
+                            <i class="fa-solid fa-mountain-sun text-japandi-secondary group-hover:text-japandi-accent transition-colors"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-japandi-primary mb-2 group-hover:text-japandi-accent transition-colors">時尚購物與浪漫夜景</h3>
+                        <p class="text-xs text-japandi-secondary leading-relaxed">明洞商圈購物 -> 南山首爾塔俯瞰市景 -> 弘大商圈年輕夜生活與烤五花肉</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-japandi-border flex items-center justify-between text-xs font-semibold text-japandi-accent">
+                        <span>查看詳情</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+
+                <!-- Day 4 Card -->
+                <a href="#day4" class="group bg-japandi-card rounded-2xl p-6 border border-japandi-border shadow-xs hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-light text-japandi-accent">DAY 4</span>
+                            <i class="fa-solid fa-suitcase-rolling text-japandi-secondary group-hover:text-japandi-accent transition-colors"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-japandi-primary mb-2 group-hover:text-japandi-accent transition-colors">延남洞漫活與賦歸</h3>
+                        <p class="text-xs text-japandi-secondary leading-relaxed">延南洞公園早午餐 -> 最後伴手禮採買 -> 機場鐵路直達仁川機場快樂賦歸</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-japandi-border flex items-center justify-between text-xs font-semibold text-japandi-accent">
+                        <span>查看詳情</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Daily Itinerary Section -->
+        <section id="itinerary" class="py-16 bg-japandi-light/50 border-t border-b border-japandi-border">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                
+                <div class="text-center max-w-xl mx-auto space-y-3">
+                    <span class="text-xs font-bold text-japandi-accent tracking-widest uppercase">Detailed Schedule</span>
+                    <h2 class="text-3xl font-bold text-japandi-primary">每日詳細行程</h2>
+                    <p class="text-japandi-secondary text-sm">每個景點皆可勾選收藏，規劃專屬您的首爾足跡</p>
+                </div>
+
+                <!-- DAY 1 CONTAINER -->
+                <div id="day1" class="bg-japandi-card rounded-3xl p-6 sm:p-10 border border-japandi-border shadow-xs space-y-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-japandi-border pb-6 gap-4">
+                        <div>
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-primary text-white">DAY 1</span>
+                            <h3 class="text-2xl font-bold text-japandi-primary mt-2">歷史古蹟與韓屋村漫步</h3>
+                        </div>
+                        <div class="text-sm text-japandi-secondary font-medium">
+                            <i class="fa-regular fa-calendar text-japandi-accent mr-1.5"></i> 第一天：仁川抵達 -> 市區 -> 景福宮
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Spot 1 -->
+                        <div class="p-5 rounded-2xl bg-japandi-light/60 border border-japandi-border/60 flex flex-col md:flex-row gap-6 items-start">
+                            <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=400&q=80" alt="Gyeongbokgung" class="w-full md:w-48 h-36 object-cover rounded-xl shadow-xs" onerror="this.src='https://placehold.co/400x300/F4F1EA/8C8275?text=Gyeongbokgung'">
+                            <div class="flex-grow space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-japandi-accent uppercase tracking-wide">景點 01 • 14:00</span>
+                                    <label class="inline-flex items-center space-x-2 cursor-pointer bg-white px-3 py-1 rounded-full border border-japandi-border text-xs">
+                                        <input type="checkbox" data-spot="景福宮" onchange="toggleSpot(this)" class="rounded text-japandi-accent focus:ring-japandi-accent">
+                                        <span class="font-medium text-japandi-primary">加入打卡清單</span>
+                                    </label>
+                                </div>
+                                <h4 class="text-lg font-bold text-japandi-primary">景福宮 (경복궁)</h4>
+                                <p class="text-xs text-japandi-secondary leading-relaxed">朝鮮王朝的正宮，氣勢恢弘。穿著韓服可免費入場，還能欣賞守衛交接儀式，感受濃厚的古典朝鮮風華。</p>
+                                <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-japandi-primary">
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-train text-japandi-accent mr-1"></i> 地鐵3號線景福宮站5號出口</span>
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-utensils text-japandi-accent mr-1"></i> 推薦：土俗村蔘雞湯</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spot 2 -->
+                        <div class="p-5 rounded-2xl bg-japandi-light/60 border border-japandi-border/60 flex flex-col md:flex-row gap-6 items-start">
+                            <img src="https://images.unsplash.com/photo-1546874177-9dd59832c3f8?auto=format&fit=crop&w=400&q=80" alt="Bukchon Hanok Village" class="w-full md:w-48 h-36 object-cover rounded-xl shadow-xs" onerror="this.src='https://placehold.co/400x300/F4F1EA/8C8275?text=Bukchon'">
+                            <div class="flex-grow space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-japandi-accent uppercase tracking-wide">景點 02 • 16:30</span>
+                                    <label class="inline-flex items-center space-x-2 cursor-pointer bg-white px-3 py-1 rounded-full border border-japandi-border text-xs">
+                                        <input type="checkbox" data-spot="北村韓屋村" onchange="toggleSpot(this)" class="rounded text-japandi-accent focus:ring-japandi-accent">
+                                        <span class="font-medium text-japandi-primary">加入打卡清單</span>
+                                    </label>
+                                </div>
+                                <h4 class="text-lg font-bold text-japandi-primary">北村韓屋村 (북촌한옥마을)</h4>
+                                <p class="text-xs text-japandi-secondary leading-relaxed">保存了數百棟朝鮮時代瓦房的傳統居住區，漫步於斜坡巷弄中，既能眺望現代首爾塔，又能體驗傳統建築美學。</p>
+                                <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-japandi-primary">
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-train text-japandi-accent mr-1"></i> 安國站3號出口</span>
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-mug-hot text-japandi-accent mr-1"></i> 推薦：Layered 司康咖啡廳</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 2 CONTAINER -->
+                <div id="day2" class="bg-japandi-card rounded-3xl p-6 sm:p-10 border border-japandi-border shadow-xs space-y-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-japandi-border pb-6 gap-4">
+                        <div>
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-primary text-white">DAY 2</span>
+                            <h3 class="text-2xl font-bold text-japandi-primary mt-2">聖水洞文青街與夜晚燈光秀</h3>
+                        </div>
+                        <div class="text-sm text-japandi-secondary font-medium">
+                            <i class="fa-regular fa-calendar text-japandi-accent mr-1.5"></i> 第二天：聖水洞 -> 廣藏市場 -> DDP
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Spot 1 -->
+                        <div class="p-5 rounded-2xl bg-japandi-light/60 border border-japandi-border/60 flex flex-col md:flex-row gap-6 items-start">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Seongsu-dong" class="w-full md:w-48 h-36 object-cover rounded-xl shadow-xs" onerror="this.src='https://placehold.co/400x300/F4F1EA/8C8275?text=Seongsu'">
+                            <div class="flex-grow space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-japandi-accent uppercase tracking-wide">景點 01 • 10:30</span>
+                                    <label class="inline-flex items-center space-x-2 cursor-pointer bg-white px-3 py-1 rounded-full border border-japandi-border text-xs">
+                                        <input type="checkbox" data-spot="聖水洞咖啡街" onchange="toggleSpot(this)" class="rounded text-japandi-accent focus:ring-japandi-accent">
+                                        <span class="font-medium text-japandi-primary">加入打卡清單</span>
+                                    </label>
+                                </div>
+                                <h4 class="text-lg font-bold text-japandi-primary">聖水洞咖啡街 (성수동)</h4>
+                                <p class="text-xs text-japandi-secondary leading-relaxed">有「首爾布魯克林」之稱，由舊工廠改造而成的紅磚建築群，匯集了全首爾最前衛的獨立咖啡館、香氛選物店 (Tamburins) 與潮牌。</p>
+                                <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-japandi-primary">
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-train text-japandi-accent mr-1"></i> 聖水站3號出口</span>
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-mug-hot text-japandi-accent mr-1"></i> 推薦：Blue Bottle 首爾店</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spot 2 -->
+                        <div class="p-5 rounded-2xl bg-japandi-light/60 border border-japandi-border/60 flex flex-col md:flex-row gap-6 items-start">
+                            <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=400&q=80" alt="Gwangjang Market" class="w-full md:w-48 h-36 object-cover rounded-xl shadow-xs" onerror="this.src='https://placehold.co/400x300/F4F1EA/8C8275?text=Gwangjang'">
+                            <div class="flex-grow space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-japandi-accent uppercase tracking-wide">景點 02 • 18:00</span>
+                                    <label class="inline-flex items-center space-x-2 cursor-pointer bg-white px-3 py-1 rounded-full border border-japandi-border text-xs">
+                                        <input type="checkbox" data-spot="廣藏市場" onchange="toggleSpot(this)" class="rounded text-japandi-accent focus:ring-japandi-accent">
+                                        <span class="font-medium text-japandi-primary">加入打卡清單</span>
+                                    </label>
+                                </div>
+                                <h4 class="text-lg font-bold text-japandi-primary">廣藏市場 (광장시장)</h4>
+                                <p class="text-xs text-japandi-secondary leading-relaxed">歷史悠久的傳統市場，熱鬧非凡。必吃麻藥紫菜包飯、綠豆煎餅、生章魚與刀削麵，感受道地韓國市井人情味。</p>
+                                <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-japandi-primary">
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-train text-japandi-accent mr-1"></i> 鍾路5街站8號出口</span>
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-utensils text-japandi-accent mr-1"></i> 推薦：順伊家綠豆煎餅</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 3 CONTAINER -->
+                <div id="day3" class="bg-japandi-card rounded-3xl p-6 sm:p-10 border border-japandi-border shadow-xs space-y-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-japandi-border pb-6 gap-4">
+                        <div>
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-primary text-white">DAY 3</span>
+                            <h3 class="text-2xl font-bold text-japandi-primary mt-2">購物天堂與南山塔夜景</h3>
+                        </div>
+                        <div class="text-sm text-japandi-secondary font-medium">
+                            <i class="fa-regular fa-calendar text-japandi-accent mr-1.5"></i> 第三天：明洞 -> 南山首爾塔 -> 弘大夜生活
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Spot 1 -->
+                        <div class="p-5 rounded-2xl bg-japandi-light/60 border border-japandi-border/60 flex flex-col md:flex-row gap-6 items-start">
+                            <img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=400&q=80" alt="N Seoul Tower" class="w-full md:w-48 h-36 object-cover rounded-xl shadow-xs" onerror="this.src='https://placehold.co/400x300/F4F1EA/8C8275?text=N+Seoul+Tower'">
+                            <div class="flex-grow space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-japandi-accent uppercase tracking-wide">景點 01 • 17:30</span>
+                                    <label class="inline-flex items-center space-x-2 cursor-pointer bg-white px-3 py-1 rounded-full border border-japandi-border text-xs">
+                                        <input type="checkbox" data-spot="南山首爾塔" onchange="toggleSpot(this)" class="rounded text-japandi-accent focus:ring-japandi-accent">
+                                        <span class="font-medium text-japandi-primary">加入打卡清單</span>
+                                    </label>
+                                </div>
+                                <h4 class="text-lg font-bold text-japandi-primary">南山首爾塔 (N서울타워)</h4>
+                                <p class="text-xs text-japandi-secondary leading-relaxed">首爾的地標，矗立於南山之巔。傍晚時分搭乘纜車上山，可俯瞰360度璀璨的首爾夜景，愛情鎖牆也是情侶必訪浪漫景點。</p>
+                                <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-japandi-primary">
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-bus text-japandi-accent mr-1"></i> 黃色循環公車 02/04號</span>
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-camera text-japandi-accent mr-1"></i> 最佳拍攝：八角亭觀景台</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 4 CONTAINER -->
+                <div id="day4" class="bg-japandi-card rounded-3xl p-6 sm:p-10 border border-japandi-border shadow-xs space-y-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-japandi-border pb-6 gap-4">
+                        <div>
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-japandi-primary text-white">DAY 4</span>
+                            <h3 class="text-2xl font-bold text-japandi-primary mt-2">延南洞悠閒早午餐與賦歸</h3>
+                        </div>
+                        <div class="text-sm text-japandi-secondary font-medium">
+                            <i class="fa-regular fa-calendar text-japandi-accent mr-1.5"></i> 第四天：延南洞公園 -> 機場鐵路
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Spot 1 -->
+                        <div class="p-5 rounded-2xl bg-japandi-light/60 border border-japandi-border/60 flex flex-col md:flex-row gap-6 items-start">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80" alt="Yeonnam-dong" class="w-full md:w-48 h-36 object-cover rounded-xl shadow-xs" onerror="this.src='https://placehold.co/400x300/F4F1EA/8C8275?text=Yeonnam'">
+                            <div class="flex-grow space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-japandi-accent uppercase tracking-wide">景點 01 • 10:00</span>
+                                    <label class="inline-flex items-center space-x-2 cursor-pointer bg-white px-3 py-1 rounded-full border border-japandi-border text-xs">
+                                        <input type="checkbox" data-spot="延南洞廢線公園" onchange="toggleSpot(this)" class="rounded text-japandi-accent focus:ring-japandi-accent">
+                                        <span class="font-medium text-japandi-primary">加入打卡清單</span>
+                                    </label>
+                                </div>
+                                <h4 class="text-lg font-bold text-japandi-primary">延南洞京義線森林步道 (연남동)</h4>
+                                <p class="text-xs text-japandi-secondary leading-relaxed">由舊鐵道改建而成的綠色林蔭步道，周遭充滿質感獨立書店、精緻甜點店與個性小店，是享受首爾慢活步調的最佳去處。</p>
+                                <div class="pt-2 flex flex-wrap gap-2 text-[11px] text-japandi-primary">
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-train text-japandi-accent mr-1"></i> 弘大入口站3號出口</span>
+                                    <span class="px-2.5 py-1 bg-white rounded-md border border-japandi-border"><i class="fa-solid fa-suitcase-rolling text-japandi-accent mr-1"></i> 可於弘大站預辦登機與行李寄放</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Accommodation & Transport Guide -->
+        <section id="guide" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-xs font-bold text-japandi-accent tracking-widest uppercase">Practical Info</span>
+                <h2 class="text-3xl font-bold text-japandi-primary">住宿與交通攻略</h2>
+                <p class="text-japandi-secondary text-sm">新手自助首爾必看的實用指南</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Accommodation recommendation -->
+                <div class="bg-japandi-card rounded-3xl p-8 border border-japandi-border shadow-xs space-y-6">
+                    <div class="flex items-center space-x-3 text-japandi-accent">
+                        <i class="fa-solid fa-hotel text-2xl"></i>
+                        <h3 class="text-xl font-bold text-japandi-primary">住宿區域推薦</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm text-japandi-secondary">
+                        <li class="p-4 rounded-2xl bg-japandi-light/50 border border-japandi-border">
+                            <strong class="text-japandi-primary block mb-1">1. 弘大 (Hongdae) — 首選推薦</strong>
+                            搭乘機場鐵路直達無需轉車，年輕熱鬧、美食與服飾店林立，夜生活豐富，非常適合自由行旅客。
+                        </li>
+                        <li class="p-4 rounded-2xl bg-japandi-light/50 border border-japandi-border">
+                            <strong class="text-japandi-primary block mb-1">2. 明洞 / 乙支路 (Myeongdong)</strong>
+                            購物最方便，美妝店與百貨公司集中，前往各大景點皆為地鐵樞紐中心。
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Transport guide -->
+                <div class="bg-japandi-card rounded-3xl p-8 border border-japandi-border shadow-xs space-y-6">
+                    <div class="flex items-center space-x-3 text-japandi-accent">
+                        <i class="fa-solid fa-train-subway text-2xl"></i>
+                        <h3 class="text-xl font-bold text-japandi-primary">交通卡與票券必備</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm text-japandi-secondary">
+                        <li class="p-4 rounded-2xl bg-japandi-light/50 border border-japandi-border">
+                            <strong class="text-japandi-primary block mb-1">1. T-money 交通卡</strong>
+                            類似台灣悠遊卡，地鐵、公車、便利商店皆可通用，可在機場或地鐵站自動售票機購買與加值。
+                        </li>
+                        <li class="p-4 rounded-2xl bg-japandi-light/50 border border-japandi-border">
+                            <strong class="text-japandi-primary block mb-1">2. Naver Map / Kakao Map</strong>
+                            在韓國導航請務必下載 Naver Map（支援繁體中文與步行導航），Google 導航在韓國不支援步行與大眾運輸詳細規劃。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Toolkits (Checklist & Budget & Packing) -->
+        <section id="toolkit" class="py-16 bg-japandi-light/60 border-t border-japandi-border">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+                
+                <div class="text-center max-w-xl mx-auto space-y-3">
+                    <span class="text-xs font-bold text-japandi-accent tracking-widest uppercase">Interactive Toolkits</span>
+                    <h2 class="text-3xl font-bold text-japandi-primary">行李與行前準備清單</h2>
+                    <p class="text-japandi-secondary text-sm">勾選確認您的出國準備事項，資料會自動保存在您的瀏覽器中</p>
+                </div>
+
+                <div class="bg-japandi-card rounded-3xl p-6 sm:p-10 border border-japandi-border shadow-xs">
+                    <div id="packing-checklist" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Checklist items will be populated by JS -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-japandi-primary text-white py-12 border-t border-japandi-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <p class="font-bold text-lg tracking-wider">SEOUL 4-DAYS 3-NIGHTS TRAVEL SITE</p>
+                <p class="text-xs text-japandi-secondary mt-1">Designed for GitHub Pages Deployment • Single File Architecture</p>
+            </div>
+            <div class="text-xs text-japandi-secondary">
+                &copy; 2026 Seoul Travel Planner. Enjoy your trip to Korea! 🇰🇷
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Checklist State Management
+        const packingItems = [
+            { id: 'p1', text: '護照 (效期6個月以上)', category: '證件' },
+            { id: 'p2', text: '韓國網卡 / eSIM', category: '通訊' },
+            { id: 'p3', text: 'T-money 交通卡', category: '交通' },
+            { id: 'p4', text: '轉接頭 (韓國為圓形兩孔)', category: '電器' },
+            { id: 'p5', text: '台幣現金 (至明洞換韓元)', category: '金錢' },
+            { id: 'p6', text: 'Q-CODE 健康申報', category: '證件' }
+        ];
+
+        function renderPackingList() {
+            const container = document.getElementById('packing-checklist');
+            const savedState = JSON.parse(localStorage.getItem('seoul_packing') || '{}');
+
+            container.innerHTML = packingItems.map(item => {
+                const isChecked = savedState[item.id] ? 'checked' : '';
+                return `
+                    <label class="flex items-center space-x-3 p-3 rounded-xl bg-japandi-light/50 border border-japandi-border cursor-pointer hover:bg-japandi-light transition-colors">
+                        <input type="checkbox" value="${item.id}" ${isChecked} onchange="updatePackingState('${item.id}', this.checked)" class="w-4 h-4 rounded text-japandi-accent focus:ring-japandi-accent">
+                        <span class="text-sm font-medium text-japandi-primary">${item.text}</span>
+                    </label>
+                `;
+            }).join('');
+        }
+
+        function updatePackingState(id, checked) {
+            const savedState = JSON.parse(localStorage.getItem('seoul_packing') || '{}');
+            savedState[id] = checked;
+            localStorage.setItem('seoul_packing', JSON.stringify(savedState));
+        }
+
+        // Spot Check-in State Management
+        function toggleSpot(checkbox) {
+            const spotName = checkbox.getAttribute('data-spot');
+            const checkedSpots = JSON.parse(localStorage.getItem('seoul_spots') || '{}');
+            checkedSpots[spotName] = checkbox.checked;
+            localStorage.setItem('seoul_spots', JSON.stringify(checkedSpots));
+            updateBadgeCount();
+        }
+
+        function updateBadgeCount() {
+            const checkedSpots = JSON.parse(localStorage.getItem('seoul_spots') || '{}');
+            const count = Object.values(checkedSpots).filter(Boolean).length;
+            document.getElementById('badge-count').innerText = count;
+        }
+
+        function loadSpotStates() {
+            const checkedSpots = JSON.parse(localStorage.getItem('seoul_spots') || '{}');
+            document.querySelectorAll('input[data-spot]').forEach(cb => {
+                const spotName = cb.getAttribute('data-spot');
+                if (checkedSpots[spotName]) {
+                    cb.checked = true;
+                }
+            });
+            updateBadgeCount();
+        }
+
+        function openChecklistModal() {
+            const checkedSpots = JSON.parse(localStorage.getItem('seoul_spots') || '{}');
+            const visited = Object.keys(checkedSpots).filter(k => checkedSpots[k]);
+            
+            let message = "【 已收藏景點清單 】\n\n";
+            if (visited.length === 0) {
+                message += "目前尚未勾選任何景點，快去行程中點選「加入打卡清單」吧！";
+            } else {
+                visited.forEach((s, index) => {
+                    message += `${index + 1}. ${s}\n`;
+                });
+            }
+            // Use custom non-blocking message display or standard notification
+            alert(message);
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            renderPackingList();
+            loadSpotStates();
+        };
+    </script>
+</body>
+</html>
