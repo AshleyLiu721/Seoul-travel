@@ -19,7 +19,7 @@
 <header class="hero">
  <div class="hero-content">
   <div class="eyebrow">A little autumn escape · 2025</div>
-  <h1>Seoul, with love ♡</h1>
+  <h1>Seoul, with my best friend♡</h1>
   <p>首爾四日小旅行 10.16 — 10.19</p>
   <span class="pill">4 days · 3 nights · just enjoy the moment</span>
  </div>
