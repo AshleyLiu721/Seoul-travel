@@ -1,5 +1,3 @@
-# Seoul-travel
-Seoul travel wz Lulu
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -22,7 +20,7 @@ Seoul travel wz Lulu
  <div class="hero-content">
   <div class="eyebrow">A little autumn escape · 2025</div>
   <h1>Seoul, with love ♡</h1>
-  <p>首爾四日小旅行　10.16 — 10.19</p>
+  <p>首爾四日小旅行 10.16 — 10.19</p>
   <span class="pill">4 days · 3 nights · just enjoy the moment</span>
  </div>
 </header>
@@ -37,13 +35,10 @@ Seoul travel wz Lulu
 <div class="section-title" id="itinerary"><h2>Our little itinerary</h2><span>行程總覽 · 4 DAYS</span></div>
 <section class="days">
  <article class="day-card">
-  <div class="day-cover"><img
-  loading="eager"
-  alt="東大門設計廣場夜景"
-  src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80"
-  onerror="this.onerror=null;this.src='https://placehold.co/1000x500/f6f1e7/647c61?text=Seoul+DDP+Night+View';"
-  style="width:100%;height:100%;object-fit:cover;"
-><span class="day-tag">DAY 01 · FRI</span></div>
+  <div class="day-cover">
+   <img loading="eager" alt="東大門設計廣場夜景" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=80">
+   <span class="day-tag">DAY 01 · FRI</span>
+  </div>
   <div class="day-body"><div class="day-head"><div><h3>抵達首爾 ✈️</h3><p>10/16（五） · Arrival day</p></div><a class="weather-link" href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">首爾天氣 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">15:15–18:45</div><div><div class="event">BR160 台北 → 仁川</div><div class="detail">飛往首爾，開始期待已久的小旅行。</div></div></li>
@@ -64,7 +59,7 @@ Seoul travel wz Lulu
   </div>
  </article>
  <article class="day-card">
-  <div class="day-cover"><img loading="lazy" alt="弘大街頭與商店" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 03 · SUN</span></div>
+  <div class="day-cover"><img loading="lazy" alt="弘大街頭與商店" src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 03 · SUN</span></div>
   <div class="day-body"><div class="day-head"><div><h3>延南洞 × 弘大 × 美美變身</h3><p>10/18（日） · Cafe & Shopping</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Yeonnam-dong+Seoul" target="_blank" rel="noopener">地圖 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">上午</div><div><div class="event">延南洞拍照 + 早午餐</div><div class="detail">在特色街區散步，找間喜歡的早午餐店。</div></div></li>
