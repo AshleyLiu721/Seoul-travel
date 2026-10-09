@@ -37,7 +37,13 @@ Seoul travel wz Lulu
 <div class="section-title" id="itinerary"><h2>Our little itinerary</h2><span>行程總覽 · 4 DAYS</span></div>
 <section class="days">
  <article class="day-card">
-  <div class="day-cover"><img loading="lazy" alt="東大門設計廣場夜景" src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 01 · FRI</span></div>
+  <div class="day-cover"><img
+  loading="eager"
+  alt="東大門設計廣場夜景"
+  src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80"
+  onerror="this.onerror=null;this.src='https://placehold.co/1000x500/f6f1e7/647c61?text=Seoul+DDP+Night+View';"
+  style="width:100%;height:100%;object-fit:cover;"
+><span class="day-tag">DAY 01 · FRI</span></div>
   <div class="day-body"><div class="day-head"><div><h3>抵達首爾 ✈️</h3><p>10/16（五） · Arrival day</p></div><a class="weather-link" href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">首爾天氣 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">15:15–18:45</div><div><div class="event">BR160 台北 → 仁川</div><div class="detail">飛往首爾，開始期待已久的小旅行。</div></div></li>
