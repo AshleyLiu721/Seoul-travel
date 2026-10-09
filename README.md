@@ -36,7 +36,7 @@
 <section class="days">
  <article class="day-card">
   <div class="day-cover">
-   <img loading="eager" alt="東大門設計廣場夜景" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=80">
+   <img loading="eager" alt="Day 1 封面" src="https://picsum.photos/id/1040/1000/500">
    <span class="day-tag">DAY 01 · FRI</span>
   </div>
   <div class="day-body"><div class="day-head"><div><h3>抵達首爾 ✈️</h3><p>10/16（五） · Arrival day</p></div><a class="weather-link" href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">首爾天氣 ↗</a></div>
@@ -102,15 +102,4 @@
   <p class="small">勾選狀態只保存在目前頁面，重新整理後會重設。</p>
  </div>
 </section>
-<section class="panel notes" id="notes" style="margin-top:18px"><h2>Our travel notes · 旅行備忘錄</h2><p class="small">把飯店地址、醫美診所、預約時間或想吃的店記在這裡。此備忘錄不會上傳或自動保存。</p><textarea id="memo" placeholder="例如：飯店地址、醫美診所地址、想買的東西……"></textarea><br><button class="save-note" id="copyMemo">複製備忘錄</button><span class="saved" id="copyStatus" aria-live="polite"></span></section>
-<footer class="footer">Made with ♡ for our Seoul days · 10.16 — 10.19<br>行程與營業資訊可能變動，出發前請再次確認。</footer>
-</main>
-<nav class="bottom-nav" aria-label="快速導覽">
- <a class="active" href="#home"><span>⌂</span>首頁</a><a href="#itinerary"><span>▦</span>行程</a><a href="#tools"><span>↗</span>實用連結</a><a href="#checklist"><span>☑</span>清單</a><a href="#notes"><span>✎</span>備忘錄</a>
-</nav>
-<script>
-document.querySelectorAll('.bottom-nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.bottom-nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
-document.getElementById('copyMemo').addEventListener('click',async()=>{const text=document.getElementById('memo').value;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='已複製！'}catch(e){document.getElementById('memo').select();status.textContent='請手動複製選取內容。'}});
-</script>
-</body>
-</html>
+<section class="panel notes" id="notes" style="margin-top:18px"><h2>Our travel notes · 旅行備忘錄</h2><p class="small">把飯店地址、醫美診所、預約時間或想吃的店記在這裡。此備忘錄不會上傳或自動
