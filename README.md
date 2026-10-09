@@ -20,7 +20,7 @@
  <div class="hero-content">
   <div class="eyebrow">A little autumn escape · 2025</div>
   <h1>Seoul, with love ♡</h1>
-  <p>首爾四日小旅行 10.16 — 10.19</p>
+  <p>首爾四日小旅行　10.16 — 10.19</p>
   <span class="pill">4 days · 3 nights · just enjoy the moment</span>
  </div>
 </header>
@@ -34,12 +34,8 @@
 </div>
 <div class="section-title" id="itinerary"><h2>Our little itinerary</h2><span>行程總覽 · 4 DAYS</span></div>
 <section class="days">
- <!-- DAY 01: 東大門 DDP / 首爾夜景 -->
  <article class="day-card">
-  <div class="day-cover">
-   <img loading="eager" alt="東大門設計廣場夜景" src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80">
-   <span class="day-tag">DAY 01 · FRI</span>
-  </div>
+  <div class="day-cover"><img loading="lazy" alt="東大門設計廣場夜景" src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 01 · FRI</span></div>
   <div class="day-body"><div class="day-head"><div><h3>抵達首爾 ✈️</h3><p>10/16（五） · Arrival day</p></div><a class="weather-link" href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">首爾天氣 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">15:15–18:45</div><div><div class="event">BR160 台北 → 仁川</div><div class="detail">飛往首爾，開始期待已久的小旅行。</div></div></li>
@@ -48,13 +44,8 @@
    </ul><div class="note">♡ 抵達日不排太滿，留一點時間給旅途的驚喜。</div>
   </div>
  </article>
-
- <!-- DAY 02: 景福宮古建築 -->
  <article class="day-card">
-  <div class="day-cover">
-   <img loading="lazy" alt="景福宮韓國傳統建築" src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1000&q=80">
-   <span class="day-tag">DAY 02 · SAT</span>
-  </div>
+  <div class="day-cover"><img loading="lazy" alt="景福宮韓國傳統建築" src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 02 · SAT</span></div>
   <div class="day-body"><div class="day-head"><div><h3>古宮 × 韓屋 × 咖啡</h3><p>10/17（六） · Old Seoul</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Gyeongbokgung+Palace" target="_blank" rel="noopener">地圖 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">上午</div><div><div class="event">景福宮 + 三清洞</div><div class="detail">欣賞宮殿建築，在三清洞巷弄散步拍照。</div></div></li>
@@ -64,13 +55,8 @@
    </ul><div class="note">♡ 景福宮、北村一帶有坡道，穿好走的鞋最重要。</div>
   </div>
  </article>
-
- <!-- DAY 03: 首爾街景 / 城市商圈 -->
  <article class="day-card">
-  <div class="day-cover">
-   <img loading="lazy" alt="首爾城市街景" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1000&q=80">
-   <span class="day-tag">DAY 03 · SUN</span>
-  </div>
+  <div class="day-cover"><img loading="lazy" alt="弘大街頭與商店" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 03 · SUN</span></div>
   <div class="day-body"><div class="day-head"><div><h3>延南洞 × 弘大 × 美美變身</h3><p>10/18（日） · Cafe & Shopping</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Yeonnam-dong+Seoul" target="_blank" rel="noopener">地圖 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">上午</div><div><div class="event">延南洞拍照 + 早午餐</div><div class="detail">在特色街區散步，找間喜歡的早午餐店。</div></div></li>
@@ -80,13 +66,8 @@
    </ul><div class="note">♡ 醫美當天請依診所指示安排術後活動、防曬與保養。</div>
   </div>
  </article>
-
- <!-- DAY 04: 首爾南山首爾塔 / 自然與城市風光 -->
  <article class="day-card">
-  <div class="day-cover">
-   <img loading="lazy" alt="南山首爾塔遠眺城市風光" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=80">
-   <span class="day-tag">DAY 04 · MON</span>
-  </div>
+  <div class="day-cover"><img loading="lazy" alt="首爾林秋日公園" src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 04 · MON</span></div>
   <div class="day-body"><div class="day-head"><div><h3>公園漫步，帶著回憶回家</h3><p>10/19（一） · Slow morning</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Seoul+Forest" target="_blank" rel="noopener">地圖 ↗</a></div>
    <ul class="timeline">
     <li><div class="time">上午</div><div><div class="event">首爾林拍照</div><div class="detail">享受秋日綠意、散步拍照，感受慢步調。</div></div></li>
@@ -118,4 +99,15 @@
   <p class="small">勾選狀態只保存在目前頁面，重新整理後會重設。</p>
  </div>
 </section>
-<section class="panel notes" id="notes" style="margin-top:18px"><h2>Our travel notes · 旅行備忘錄</h2><p class="small">把飯店地址、醫美診所
+<section class="panel notes" id="notes" style="margin-top:18px"><h2>Our travel notes · 旅行備忘錄</h2><p class="small">把飯店地址、醫美診所、預約時間或想吃的店記在這裡。此備忘錄不會上傳或自動保存。</p><textarea id="memo" placeholder="例如：飯店地址、醫美診所地址、想買的東西……"></textarea><br><button class="save-note" id="copyMemo">複製備忘錄</button><span class="saved" id="copyStatus" aria-live="polite"></span></section>
+<footer class="footer">Made with ♡ for our Seoul days · 10.16 — 10.19<br>行程與營業資訊可能變動，出發前請再次確認。</footer>
+</main>
+<nav class="bottom-nav" aria-label="快速導覽">
+ <a class="active" href="#home"><span>⌂</span>首頁</a><a href="#itinerary"><span>▦</span>行程</a><a href="#tools"><span>↗</span>實用連結</a><a href="#checklist"><span>☑</span>清單</a><a href="#notes"><span>✎</span>備忘錄</a>
+</nav>
+<script>
+document.querySelectorAll('.bottom-nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.bottom-nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
+document.getElementById('copyMemo').addEventListener('click',async()=>{const text=document.getElementById('memo').value;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='已複製！'}catch(e){document.getElementById('memo').select();status.textContent='請手動複製選取內容。'}});
+</script>
+</body>
+</html>
