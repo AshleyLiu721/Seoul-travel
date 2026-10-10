@@ -1,112 +1,472 @@
-<html lang="zh-Hant">
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f6f1e7">
-<title>Seoul Trip · 首爾四日小旅行</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#f6f1e7;--card:#fffdf8;--ink:#343a31;--muted:#817f73;--green:#647c61;--green2:#dce6d7;--pink:#d99b91;--gold:#c5a66b;--line:#e9e1d4;--shadow:0 10px 30px #51432a0c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Noto Sans TC",sans-serif;line-height:1.6}button,input,textarea{font:inherit}button{cursor:pointer}.shell{max-width:1120px;margin:auto;padding:18px 18px 100px}.hero{min-height:340px;position:relative;overflow:hidden;border-radius:28px;padding:32px;color:white;background:linear-gradient(90deg,#292f2d9c,#292f2d08),url('https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1600&q=85') center 48%/cover;box-shadow:var(--shadow);display:flex;align-items:end}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#2029238c,transparent 70%);pointer-events:none}.hero-content{position:relative;z-index:1}.eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}.hero h1{font:italic 600 clamp(3rem,8vw,5.7rem)/1 "Playfair Display",serif;margin:12px 0}.hero p{margin:10px 0 0;letter-spacing:.07em}.hero .pill{display:inline-block;background:#fffdf0e8;color:#394438;padding:7px 13px;border-radius:99px;font-size:.8rem;margin-top:20px}.intro{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:22px 2px 24px}.intro h2{font-size:1.2rem;margin:0}.intro p{color:var(--muted);font-size:.9rem;margin:4px 0 0}.quick-links{display:flex;gap:8px;flex-wrap:wrap}.quick-links a,.quick-links button{color:var(--green);border:1px solid #d6ddcf;border-radius:99px;padding:8px 12px;text-decoration:none;background:#fffdf8;font-size:.82rem}.section-title{display:flex;align-items:end;justify-content:space-between;margin:28px 2px 14px}.section-title h2{margin:0;font-size:1.35rem}.section-title span{color:var(--muted);font-size:.8rem}.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.day-card,.panel{background:var(--card);border:1px solid #eee6d9;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}.day-cover{height:170px;position:relative;background:#ddd;overflow:hidden}.day-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.day-card:hover .day-cover img{transform:scale(1.04)}.day-tag{position:absolute;left:14px;top:14px;background:#fffdf0ed;color:var(--green);border-radius:12px;padding:6px 10px;font-weight:700;font-size:.78rem}.day-body{padding:18px}.day-head{display:flex;justify-content:space-between;gap:10px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:12px}.day-head h3{margin:0;font-size:1.1rem}.day-head p{margin:3px 0 0;color:var(--muted);font-size:.82rem}.weather-link{font-size:.75rem;text-decoration:none;color:var(--green);white-space:nowrap}.timeline{list-style:none;margin:0;padding:0}.timeline li{display:grid;grid-template-columns:68px 1fr;gap:8px;padding:9px 0;position:relative}.timeline li+li{border-top:1px dashed #e8e0d3}.time{font-size:.75rem;color:var(--green);font-weight:700;padding-top:3px}.event{font-size:.9rem;font-weight:600}.detail{font-size:.8rem;color:var(--muted);margin-top:3px}.note{background:#f4f0e6;border-radius:12px;padding:11px 12px;color:#6c6d60;font-size:.8rem;margin-top:12px}.two-col{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-top:18px}.panel{padding:20px}.panel h2{font-size:1.1rem;margin:0 0 14px}.tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tool{background:#f7f3ea;border-radius:15px;padding:13px}.tool strong{display:block;font-size:.86rem;margin-bottom:6px}.tool p{margin:0;color:var(--muted);font-size:.78rem}.tool a{color:var(--green);font-size:.8rem}.checklist label{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.88rem}.checklist input{accent-color:var(--green);margin-top:5px}.checklist label:has(input:checked) span{text-decoration:line-through;color:#9a998f}.notes textarea{width:100%;min-height:155px;border:1px solid var(--line);border-radius:14px;background:#fffefa;padding:12px;resize:vertical;color:var(--ink)}.small{font-size:.78rem;color:var(--muted)}.map-links{display:flex;gap:8px;flex-wrap:wrap}.map-links a{display:block;background:#f1eee5;color:var(--green);border-radius:12px;padding:9px 12px;text-decoration:none;font-size:.82rem}.footer{text-align:center;color:var(--muted);font-size:.8rem;padding:30px 0 0}.bottom-nav{display:none}.save-note{border:0;background:var(--green);color:white;border-radius:99px;padding:9px 13px;margin-top:8px;font-size:.8rem}.saved{font-size:.76rem;color:var(--green);margin-left:8px}
-@media(max-width:720px){.shell{padding:12px 12px 92px}.hero{min-height:290px;padding:24px;border-radius:22px;background-position:55% center}.intro{align-items:flex-start;flex-direction:column}.days,.two-col{grid-template-columns:1fr}.day-cover{height:190px}.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bottom-nav{position:fixed;z-index:10;bottom:0;left:0;right:0;display:flex;justify-content:space-around;padding:9px 8px calc(9px + env(safe-area-inset-bottom));background:#fffdf3ed;backdrop-filter:blur(12px);border-top:1px solid var(--line)}.bottom-nav a{font-size:.72rem;color:var(--muted);text-decoration:none;text-align:center;min-width:54px}.bottom-nav a span{display:block;font-size:1.15rem}.bottom-nav a.active{color:var(--green);font-weight:700}.section-title{margin-top:24px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 韓國首爾四天三夜自由行</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+            background-color: #F7F5F0; /* 溫潤淺米色底色 */
+            color: #4A4A48;
+        }
+        .morandi-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid #EAE5DC;
+        }
+        /* 自定義捲軸 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F5F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background: #D5CEC1;
+        }
+    </style>
 </head>
-<body>
-<main class="shell" id="home">
-<header class="hero">
- <div class="hero-content">
-  <div class="eyebrow">A little autumn escape · 2025</div>
-  <h1>Seoul, with love ♡</h1>
-  <p>首爾四日小旅行　10.16 — 10.19</p>
-  <span class="pill">4 days · 3 nights · just enjoy the moment</span>
- </div>
-</header>
-<div class="intro">
- <div><h2>안녕, Seoul! 你好首爾 🌿</h2><p>把喜歡的街道、咖啡香和秋日風景，慢慢收進回憶裡。</p></div>
- <div class="quick-links">
-  <a href="https://www.google.com/maps/search/?api=1&query=Seoul" target="_blank" rel="noopener">📍 首爾地圖</a>
-  <a href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">☁️ 首爾天氣</a>
-  <a href="https://wise.com/gb/currency-converter/krw-to-twd-rate" target="_blank" rel="noopener">₩ 匯率換算</a>
- </div>
-</div>
-<div class="section-title" id="itinerary"><h2>Our little itinerary</h2><span>行程總覽 · 4 DAYS</span></div>
-<section class="days">
- <article class="day-card">
-  <div class="day-cover"><img loading="lazy" alt="東大門設計廣場夜景" src="https://images.unsplash.com/photo-1538485399081-7c897e5b6c7a?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 01 · FRI</span></div>
-  <div class="day-body"><div class="day-head"><div><h3>抵達首爾 ✈️</h3><p>10/16（五） · Arrival day</p></div><a class="weather-link" href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">首爾天氣 ↗</a></div>
-   <ul class="timeline">
-    <li><div class="time">15:15–18:45</div><div><div class="event">BR160 台北 → 仁川</div><div class="detail">飛往首爾，開始期待已久的小旅行。</div></div></li>
-    <li><div class="time">晚上</div><div><div class="event">飯店 Check-in</div><div class="detail">放好行李、稍作休息，確認隔天交通。</div></div></li>
-    <li><div class="time">夜景散步</div><div><div class="event">東大門設計廣場 DDP</div><div class="detail">欣賞建築夜景，附近簡單逛街、吃點東西。</div></div></li>
-   </ul><div class="note">♡ 抵達日不排太滿，留一點時間給旅途的驚喜。</div>
-  </div>
- </article>
- <article class="day-card">
-  <div class="day-cover"><img loading="lazy" alt="景福宮韓國傳統建築" src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 02 · SAT</span></div>
-  <div class="day-body"><div class="day-head"><div><h3>古宮 × 韓屋 × 咖啡</h3><p>10/17（六） · Old Seoul</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Gyeongbokgung+Palace" target="_blank" rel="noopener">地圖 ↗</a></div>
-   <ul class="timeline">
-    <li><div class="time">上午</div><div><div class="event">景福宮 + 三清洞</div><div class="detail">欣賞宮殿建築，在三清洞巷弄散步拍照。</div></div></li>
-    <li><div class="time">下午</div><div><div class="event">北村韓屋村 → 仁寺洞 → 益善洞</div><div class="detail">傳統屋瓦、文創小店與特色巷弄，一路慢慢逛。</div></div></li>
-    <li><div class="time">Coffee time</div><div><div class="event">London Bagel Museum + Cafe Onion</div><div class="detail">咖啡甜點巡禮。熱門店可能需要排隊，建議預留彈性。</div><div class="map-links" style="margin-top:7px"><a href="https://www.google.com/maps/search/?api=1&query=London+Bagel+Museum+Anguk" target="_blank" rel="noopener">London Bagel ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Cafe+Onion+Anguk" target="_blank" rel="noopener">Cafe Onion ↗</a></div></div></li>
-    <li><div class="time">晚上</div><div><div class="event">清溪川散步</div><div class="detail">沿著溪畔走走，享受首爾夜晚的氛圍。</div></div></li>
-   </ul><div class="note">♡ 景福宮、北村一帶有坡道，穿好走的鞋最重要。</div>
-  </div>
- </article>
- <article class="day-card">
-  <div class="day-cover"><img loading="lazy" alt="弘大街頭與商店" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 03 · SUN</span></div>
-  <div class="day-body"><div class="day-head"><div><h3>延南洞 × 弘大 × 美美變身</h3><p>10/18（日） · Cafe & Shopping</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Yeonnam-dong+Seoul" target="_blank" rel="noopener">地圖 ↗</a></div>
-   <ul class="timeline">
-    <li><div class="time">上午</div><div><div class="event">延南洞拍照 + 早午餐</div><div class="detail">在特色街區散步，找間喜歡的早午餐店。</div></div></li>
-    <li><div class="time">中午–下午</div><div><div class="event">弘大商圈逛街</div><div class="detail">服飾、美妝、選物店自由探索。</div></div></li>
-    <li><div class="time">16:40</div><div><div class="event">醫美預約</div><div class="detail">請預留前往診所的交通與報到時間，確認預約地址。</div></div></li>
-    <li><div class="time">晚上</div><div><div class="event">東大門逛街</div><div class="detail">晚餐後繼續購物；依店家營業時間彈性安排。</div></div></li>
-   </ul><div class="note">♡ 醫美當天請依診所指示安排術後活動、防曬與保養。</div>
-  </div>
- </article>
- <article class="day-card">
-  <div class="day-cover"><img loading="lazy" alt="首爾林秋日公園" src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1000&q=80"><span class="day-tag">DAY 04 · MON</span></div>
-  <div class="day-body"><div class="day-head"><div><h3>公園漫步，帶著回憶回家</h3><p>10/19（一） · Slow morning</p></div><a class="weather-link" href="https://www.google.com/maps/search/?api=1&query=Seoul+Forest" target="_blank" rel="noopener">地圖 ↗</a></div>
-   <ul class="timeline">
-    <li><div class="time">上午</div><div><div class="event">首爾林拍照</div><div class="detail">享受秋日綠意、散步拍照，感受慢步調。</div></div></li>
-    <li><div class="time">下午</div><div><div class="event">隨興發揮 ♡</div><div class="detail">咖啡廳、最後採買或回飯店整理行李。</div></div></li>
-    <li><div class="time">建議預留</div><div><div class="event">前往仁川機場</div><div class="detail">請依飯店位置、交通方式與航空公司報到要求預留足夠時間。</div></div></li>
-    <li><div class="time">19:45–21:25</div><div><div class="event">BR159 首爾 → 台北</div><div class="detail">帶著滿滿照片與回憶回家！</div></div></li>
-   </ul><div class="note">♡ 回程日建議先確認行李、退稅與機場交通。</div>
-  </div>
- </article>
-</section>
-<section class="two-col" id="tools">
- <div class="panel"><h2>Useful little links · 實用連結</h2><div class="tool-grid">
-  <div class="tool"><strong>☁️ 首爾天氣</strong><p>出門前查看即時天氣與降雨。</p><a href="https://weather.com/weather/tenday/l/Seoul+South+Korea" target="_blank" rel="noopener">查看 10 日預報 ↗</a></div>
-  <div class="tool"><strong>🗺️ Google Maps</strong><p>搜尋景點、店家與交通路線。</p><a href="https://www.google.com/maps/search/?api=1&query=Seoul" target="_blank" rel="noopener">開啟首爾地圖 ↗</a></div>
-  <div class="tool"><strong>🚇 首爾地鐵</strong><p>路線與轉乘資訊。</p><a href="https://www.seoulmetro.co.kr/en" target="_blank" rel="noopener">Seoul Metro ↗</a></div>
-  <div class="tool"><strong>💱 韓元換算</strong><p>即時匯率僅供參考，刷卡以實際入帳為準。</p><a href="https://wise.com/gb/currency-converter/krw-to-twd-rate" target="_blank" rel="noopener">KRW → TWD ↗</a></div>
-  <div class="tool"><strong>🛫 航班資訊</strong><p>出發前再次確認航班與航廈。</p><a href="https://www.evaair.com/" target="_blank" rel="noopener">長榮航空官網 ↗</a></div>
-  <div class="tool"><strong>🌏 韓國旅遊資訊</strong><p>旅遊公告、景點與旅遊須知。</p><a href="https://english.visitkorea.or.kr/" target="_blank" rel="noopener">Visit Korea ↗</a></div>
- </div></div>
- <div class="panel checklist" id="checklist"><h2>Little packing checklist · 必備清單</h2>
-  <label><input type="checkbox"><span>護照、機票與飯店資料</span></label>
-  <label><input type="checkbox"><span>信用卡、韓元、T-money 交通卡</span></label>
-  <label><input type="checkbox"><span>手機、充電器、行動電源</span></label>
-  <label><input type="checkbox"><span>轉接頭與充電線</span></label>
-  <label><input type="checkbox"><span>舒適好走的鞋、外套</span></label>
-  <label><input type="checkbox"><span>個人藥品、保養品與防曬</span></label>
-  <label><input type="checkbox"><span>醫美預約資訊與診所地址</span></label>
-  <label><input type="checkbox"><span>行李秤、購物袋、備用袋</span></label>
-  <p class="small">勾選狀態只保存在目前頁面，重新整理後會重設。</p>
- </div>
-</section>
-<section class="panel notes" id="notes" style="margin-top:18px"><h2>Our travel notes · 旅行備忘錄</h2><p class="small">把飯店地址、醫美診所、預約時間或想吃的店記在這裡。此備忘錄不會上傳或自動保存。</p><textarea id="memo" placeholder="例如：飯店地址、醫美診所地址、想買的東西……"></textarea><br><button class="save-note" id="copyMemo">複製備忘錄</button><span class="saved" id="copyStatus" aria-live="polite"></span></section>
-<footer class="footer">Made with ♡ for our Seoul days · 10.16 — 10.19<br>行程與營業資訊可能變動，出發前請再次確認。</footer>
-</main>
-<nav class="bottom-nav" aria-label="快速導覽">
- <a class="active" href="#home"><span>⌂</span>首頁</a><a href="#itinerary"><span>▦</span>行程</a><a href="#tools"><span>↗</span>實用連結</a><a href="#checklist"><span>☑</span>清單</a><a href="#notes"><span>✎</span>備忘錄</a>
-</nav>
-<script>
-document.querySelectorAll('.bottom-nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.bottom-nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
-document.getElementById('copyMemo').addEventListener('click',async()=>{const text=document.getElementById('memo').value;const status=document.getElementById('copyStatus');try{await navigator.clipboard.writeText(text);status.textContent='已複製！'}catch(e){document.getElementById('memo').select();status.textContent='請手動複製選取內容。'}});
-</script>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#E3DEC3] selection:text-[#525B52]">
+
+    <header class="sticky top-0 z-50 bg-[#F7F5F0]/90 backdrop-blur-md border-b border-[#EAE5DC] shadow-sm">
+        <div class="max-w-3xl mx-auto px-5 py-3.5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-[#C8D6AF] text-[#3D5233] p-2.5 rounded-2xl shadow-sm flex items-center justify-center">
+                    <i class="fa-solid fa-plane-departure text-base"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-[#4A4A48] text-base tracking-tight">首爾秋日慢旅</h1>
+                    <p class="text-xs text-[#8C857B] font-medium">2026.10.16 - 10.19 (4天3夜)</p>
+                </div>
+            </div>
+            <!-- 首爾實用快速連結 -->
+            <div class="flex items-center space-x-2">
+                <a href="https://www.accuweather.com/en/kr/seoul/226081/weather-forecast/226081" target="_blank" title="首爾天氣" class="flex items-center space-x-1.5 bg-[#FAF7F0] hover:bg-[#F2EFE9] text-[#6B7565] px-3 py-1.5 rounded-xl text-xs font-medium transition border border-[#E3DEC3] shadow-sm">
+                    <i class="fa-solid fa-cloud-sun text-[#D4A373]"></i>
+                    <span class="hidden sm:inline">天氣</span>
+                </a>
+                <a href="https://rate.bot.com.tw/xrt?Lang=zh-TW" target="_blank" title="即時匯率" class="flex items-center space-x-1.5 bg-[#FAF7F0] hover:bg-[#F2EFE9] text-[#6B7565] px-3 py-1.5 rounded-xl text-xs font-medium transition border border-[#E3DEC3] shadow-sm">
+                    <i class="fa-solid fa-won-sign text-[#8CBDB9]"></i>
+                    <span class="hidden sm:inline">匯率</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-3xl w-full mx-auto px-5 py-6">
+        <!-- Hero Banner Card (莫蘭迪色系風格) -->
+        <div class="relative rounded-3xl overflow-hidden shadow-md mb-8 bg-gradient-to-br from-[#DCE4E3] via-[#EAE5DC] to-[#F3EFEA] text-[#4A4A48] p-6 sm:p-8 border border-[#E2DBD0]">
+            <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+                <i class="fa-solid fa-earth-asia text-[180px]"></i>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <span class="bg-[#FAF7F0]/80 text-[#6B7565] border border-[#E3DEC3] text-xs font-semibold px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3 shadow-sm">
+                        <i class="fa-solid fa-location-dot mr-1.5 text-[#D4A373]"></i> South Korea • Seoul
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2 text-[#3A3A38]">韓國首爾自由行 🇰🇷</h2>
+                    <p class="text-[#68645C] text-sm max-w-lg leading-relaxed">
+                        漫步景福宮與北村韓屋，解鎖益善洞、延南洞特色咖啡廳，享受悠閒的弘大購物與東大門夜景。
+                    </p>
+                </div>
+                <!-- 航班摘要 -->
+                <div class="bg-white/70 backdrop-blur-md border border-[#EAE5DC] p-4 rounded-2xl w-full md:w-auto text-xs space-y-2 shadow-sm">
+                    <div class="flex items-center justify-between space-x-4">
+                        <span class="text-[#7A7369] font-medium"><i class="fa-solid fa-plane-departure mr-1 text-[#8CBDB9]"></i>去程 10/16</span>
+                        <span class="font-bold text-[#4A4A48]">BR160 15:15-18:45</span>
+                    </div>
+                    <div class="border-t border-[#EAE5DC]/60 pt-2 flex items-center justify-between space-x-4">
+                        <span class="text-[#7A7369] font-medium"><i class="fa-solid fa-plane-arrival mr-1 text-[#E6C280]"></i>回程 10/19</span>
+                        <span class="font-bold text-[#4A4A48]">BR159 19:45-21:25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 日期導覽列 (莫蘭迪色系切換按鈕) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6" id="dayTabs">
+            <button onclick="switchTab(1)" class="day-tab px-4 py-3 rounded-2xl font-bold text-xs sm:text-sm transition shadow-sm bg-[#C8D6AF] text-[#3D5233] border border-[#B8C89F] flex flex-col items-center justify-center space-y-0.5" data-day="1">
+                <span class="text-xs opacity-75 font-normal">10/16 (五)</span>
+                <span>Day 1 · 抵達與夜景</span>
+            </button>
+            <button onclick="switchTab(2)" class="day-tab px-4 py-3 rounded-2xl font-semibold text-xs sm:text-sm transition shadow-sm bg-white text-[#68645C] hover:bg-[#FAF7F0] border border-[#EAE5DC] flex flex-col items-center justify-center space-y-0.5" data-day="2">
+                <span class="text-xs opacity-60 font-normal">10/17 (六)</span>
+                <span>Day 2 · 古宮與跑咖</span>
+            </button>
+            <button onclick="switchTab(3)" class="day-tab px-4 py-3 rounded-2xl font-semibold text-xs sm:text-sm transition shadow-sm bg-white text-[#68645C] hover:bg-[#FAF7F0] border border-[#EAE5DC] flex flex-col items-center justify-center space-y-0.5" data-day="3">
+                <span class="text-xs opacity-60 font-normal">10/18 (日)</span>
+                <span>Day 3 · 弘大與醫美</span>
+            </button>
+            <button onclick="switchTab(4)" class="day-tab px-4 py-3 rounded-2xl font-semibold text-xs sm:text-sm transition shadow-sm bg-white text-[#68645C] hover:bg-[#FAF7F0] border border-[#EAE5DC] flex flex-col items-center justify-center space-y-0.5" data-day="4">
+                <span class="text-xs opacity-60 font-normal">10/19 (一)</span>
+                <span>Day 4 · 首爾林返程</span>
+            </button>
+        </div>
+
+        <!-- 行程詳細內容區塊 -->
+        <div class="space-y-6">
+
+            <!-- Day 1 Content -->
+            <div id="content-day-1" class="day-content space-y-4">
+                <div class="bg-[#EAE5DC]/60 border border-[#E2DBD0] p-4 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-[#7A7369] uppercase tracking-wide">Day 1</span>
+                        <h3 class="text-base font-bold text-[#4A4A48]">抵達首爾 · 東大門設計廣場夜景</h3>
+                    </div>
+                    <span class="bg-[#DCE4E3] text-[#4A605E] text-xs px-3 py-1 rounded-xl font-medium">10/16 (五)</span>
+                </div>
+
+                <div class="grid gap-3.5">
+                    <!-- Item 1 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#DCE4E3] text-[#4A605E] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            15:15
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">長榮航空 BR160 起飛</h4>
+                                <span class="text-xs bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md border border-[#EAE5DC]">飛行中</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">台北 TPE ➔ 首爾仁川 ICN (預計 18:45 抵達)</p>
+                            <div class="mt-2.5 flex items-center space-x-1.5 text-xs text-[#68645C] font-medium">
+                                <i class="fa-solid fa-plane text-[#8CBDB9]"></i>
+                                <span>航程約 2 小時 30 分</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#FAF0E6] text-[#A67C52] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            夜晚
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">飯店 Check-in 與休息</h4>
+                                <a href="https://map.naver.com" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">前往下榻飯店辦理入住手續，放置行李與稍作梳洗。</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#F3E9DD] text-[#8C6D53] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            夜間
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">東大門設計廣場 (DDP) 夜景 & 簡單逛街</h4>
+                                <a href="https://map.naver.com/p/search/東大門設計廣場" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">欣賞知名流線型未來感建築 DDP 的迷人夜景，並在周邊商場簡單散步逛街。</p>
+                            <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#DDP夜景</span>
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#東大門商圈</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 Content -->
+            <div id="content-day-2" class="day-content space-y-4 hidden">
+                <div class="bg-[#F3E9DD]/60 border border-[#EADFD5] p-4 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-[#8C6D53] uppercase tracking-wide">Day 2</span>
+                        <h3 class="text-base font-bold text-[#4A4A48]">古宮漫步 · 北村韓屋 · 咖啡廳馬拉松</h3>
+                    </div>
+                    <span class="bg-[#FAF0E6] text-[#A67C52] text-xs px-3 py-1 rounded-xl font-medium">10/17 (六)</span>
+                </div>
+
+                <div class="grid gap-3.5">
+                    <!-- Item 1 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#FAF0E6] text-[#A67C52] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            上午
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">景福宮 + 三清洞</h4>
+                                <a href="https://map.naver.com/p/search/景福宮" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">造訪朝鮮王朝正宮（可考慮租借韓服），隨後漫步於充滿文藝氣息與銀杏樹的三清洞街道。</p>
+                            <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#景福宮</span>
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#三清洞散策</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#FAF7F0] text-[#8C857B] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            下午
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">北村韓屋村 + 仁寺洞 + 益善洞 + 跑咖</h4>
+                                <a href="https://map.naver.com/p/search/益善洞" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">穿梭北村韓屋與仁寺洞文創小店，再到益善洞韓屋巷弄探訪人氣咖啡廳。</p>
+                            <!-- 咖啡廳特別提醒 -->
+                            <div class="mt-3 bg-[#F9F7F2] border border-[#EAE5DC] p-3 rounded-xl">
+                                <span class="text-xs font-bold text-[#8C7A6B] block mb-1.5"><i class="fa-solid fa-mug-hot mr-1 text-[#D4A373]"></i> 咖啡廳清單:</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="bg-white text-[#68645C] px-2.5 py-1 rounded-lg text-xs font-medium border border-[#EAE5DC]">London Bagel Museum</span>
+                                    <span class="bg-white text-[#68645C] px-2.5 py-1 rounded-lg text-xs font-medium border border-[#EAE5DC]">Cafe Onion 安國店</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#DCE4E3] text-[#4A605E] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            晚上
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">清溪川散步</h4>
+                                <a href="https://map.naver.com/p/search/清溪川" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">晚餐後沿著清溪川漫步，享受首爾秋夜燈光水岸的愜意時光。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Content -->
+            <div id="content-day-3" class="day-content space-y-4 hidden">
+                <div class="bg-[#DCE4E3]/60 border border-[#CEDAD8] p-4 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-[#4A605E] uppercase tracking-wide">Day 3</span>
+                        <h3 class="text-base font-bold text-[#4A4A48]">延南洞早午餐 · 弘大購物 · 醫美預約</h3>
+                    </div>
+                    <span class="bg-[#DCE4E3] text-[#4A605E] text-xs px-3 py-1 rounded-xl font-medium">10/18 (日)</span>
+                </div>
+
+                <div class="grid gap-3.5">
+                    <!-- Item 1 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#DCE4E3] text-[#4A605E] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            上午
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">延南洞拍照 + 吃早午餐</h4>
+                                <a href="https://map.naver.com/p/search/延南洞" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">漫步於浪漫綠意盎然的延南洞京義線林蔭道，享用精緻早午餐。</p>
+                            <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#延南洞早午餐</span>
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#森林길拍照</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#F3E9DD] text-[#8C6D53] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            下午
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">弘大商圈逛街 & 醫美行程</h4>
+                                <a href="https://map.naver.com/p/search/弘大商圈" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">探索弘大商圈潮流服飾與美妝店。請留意時間，於下午 16:40 前往醫美診所！</p>
+                            <div class="mt-3 inline-flex items-center space-x-2 bg-[#FAF7F0] border border-[#E3DEC3] text-[#7A6A56] px-3.5 py-1.5 rounded-xl text-xs font-bold">
+                                <i class="fa-solid fa-clock text-[#D4A373]"></i>
+                                <span>醫美預約時間：16:40</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#FAF7F0] text-[#8C857B] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            晚上
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">東大門逛街</h4>
+                                <a href="https://map.naver.com/p/search/東大門批發市場" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">晚間前往東大門批發與零售商城，繼續血拼戰利品。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 Content -->
+            <div id="content-day-4" class="day-content space-y-4 hidden">
+                <div class="bg-[#F6EFEA]/80 border border-[#EADFD5] p-4 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-[#A67C52] uppercase tracking-wide">Day 4</span>
+                        <h3 class="text-base font-bold text-[#4A4A48]">首爾林拍照 · 隨興發揮 · 返回溫暖的家</h3>
+                    </div>
+                    <span class="bg-[#FAF0E6] text-[#A67C52] text-xs px-3 py-1 rounded-xl font-medium">10/19 (一)</span>
+                </div>
+
+                <div class="grid gap-3.5">
+                    <!-- Item 1 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#FAF0E6] text-[#A67C52] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            上午
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">首爾林拍照散步</h4>
+                                <a href="https://map.naver.com/p/search/首爾林" target="_blank" class="text-xs text-[#68645C] hover:underline flex items-center space-x-1 font-medium">
+                                    <i class="fa-solid fa-map-location-dot text-[#D4A373]"></i><span>Naver Map</span>
+                                </a>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">造訪首爾市民喜愛的首爾林公園，欣賞秋季林間風光與可愛小鹿，非常適合拍照。</p>
+                            <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#首爾林漫步</span>
+                                <span class="bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md text-[11px] border border-[#EAE5DC]">#秋日美景</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#DCE4E3] text-[#4A605E] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            下午
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">隨興發揮 / 最後採買</h4>
+                                <span class="text-xs bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md border border-[#EAE5DC]">彈性時間</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">自由發揮時間！可在聖水洞周邊逛逛獨立選品店或咖啡廳，隨後收拾行李準備前往機場。</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="morandi-card p-4.5 rounded-2xl shadow-sm hover:shadow transition flex items-start space-x-4">
+                        <div class="bg-[#EAE5DC] text-[#5A554D] p-2.5 rounded-xl font-bold text-xs min-w-[70px] text-center">
+                            19:45
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-[#4A4A48] text-sm sm:text-base">長榮航空 BR159 起飛</h4>
+                                <span class="text-xs bg-[#FAF7F0] text-[#7A7369] px-2 py-0.5 rounded-md border border-[#EAE5DC]">返程航班</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-[#7A7369] mt-1">首爾仁川 ICN ➔ 台北 TPE (預計 21:25 抵達)，圓滿結束首爾四天三夜美好旅程！</p>
+                            <div class="mt-2.5 flex items-center space-x-1.5 text-xs text-[#68645C] font-medium">
+                                <i class="fa-solid fa-plane-arrival text-[#8CBDB9]"></i>
+                                <span>平安賦歸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 韓國旅遊實用工具卡片 -->
+        <div class="mt-10 morandi-card rounded-3xl p-6 shadow-sm">
+            <h3 class="font-bold text-[#4A4A48] text-sm mb-4 flex items-center space-x-2">
+                <i class="fa-solid fa-compass text-[#D4A373]"></i>
+                <span>首爾旅遊必備工具</span>
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <a href="https://map.naver.com" target="_blank" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#FAF7F0] hover:bg-[#F2EFE9] border border-[#EAE5DC] transition text-center group">
+                    <div class="w-9 h-9 rounded-xl bg-[#E2EBE5] text-[#4A605E] flex items-center justify-center mb-1.5 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <span class="text-xs font-bold text-[#4A4A48]">Naver Map</span>
+                    <span class="text-[10px] text-[#8C857B] mt-0.5">韓國導航地圖</span>
+                </a>
+                <a href="https://papago.naver.com" target="_blank" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#FAF7F0] hover:bg-[#F2EFE9] border border-[#EAE5DC] transition text-center group">
+                    <div class="w-9 h-9 rounded-xl bg-[#E3EBE8] text-[#3D5A56] flex items-center justify-center mb-1.5 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <span class="text-xs font-bold text-[#4A4A48]">Papago 翻譯</span>
+                    <span class="text-[10px] text-[#8C857B] mt-0.5">韓語即時翻譯</span>
+                </a>
+                <a href="https://www.metro.seoul.kr" target="_blank" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#FAF7F0] hover:bg-[#F2EFE9] border border-[#EAE5DC] transition text-center group">
+                    <div class="w-9 h-9 rounded-xl bg-[#E8E6E1] text-[#615B52] flex items-center justify-center mb-1.5 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-train-subway"></i>
+                    </div>
+                    <span class="text-xs font-bold text-[#4A4A48]">首爾地鐵</span>
+                    <span class="text-[10px] text-[#8C857B] mt-0.5">路線指南</span>
+                </a>
+                <a href="https://www.koreatravelloader.com" target="_blank" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#FAF7F0] hover:bg-[#F2EFE9] border border-[#EAE5DC] transition text-center group">
+                    <div class="w-9 h-9 rounded-xl bg-[#F3EBE3] text-[#8C6D53] flex items-center justify-center mb-1.5 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-taxi"></i>
+                    </div>
+                    <span class="text-xs font-bold text-[#4A4A48]">Kakao T</span>
+                    <span class="text-[10px] text-[#8C857B] mt-0.5">叫車與交通</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-12 bg-[#EFECE6] text-[#7A7369] py-6 text-center text-xs border-t border-[#E3DEC3]">
+        <div class="max-w-3xl mx-auto px-5 space-y-1">
+            <p class="font-medium text-[#5A554D]">Seoul 4-Day Autumn Itinerary • Morandi Aesthetic Edition</p>
+            <p class="text-[11px] text-[#9E9589]">Have a wonderful trip to Seoul!</p>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(dayNum) {
+            // 隱藏所有行程內容
+            const contents = document.querySelectorAll('.day-content');
+            contents.forEach(el => el.classList.add('hidden'));
+
+            // 顯示點選的行程內容
+            const activeContent = document.getElementById('content-day-' + dayNum);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+
+            // 更新按鈕莫蘭迪色彩狀態
+            const tabs = document.querySelectorAll('.day-tab');
+            tabs.forEach(tab => {
+                const tabDay = tab.getAttribute('data-day');
+                if (tabDay == dayNum) {
+                    tab.className = 'day-tab px-4 py-3 rounded-2xl font-bold text-xs sm:text-sm transition shadow-sm bg-[#C8D6AF] text-[#3D5233] border border-[#B8C89F] flex flex-col items-center justify-center space-y-0.5';
+                } else {
+                    tab.className = 'day-tab px-4 py-3 rounded-2xl font-semibold text-xs sm:text-sm transition shadow-sm bg-white text-[#68645C] hover:bg-[#FAF7F0] border border-[#EAE5DC] flex flex-col items-center justify-center space-y-0.5';
+                }
+            });
+
+            // 平滑滾動至上方
+            window.scrollTo({ top: 160, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
+```
+eof
+
+I have successfully updated the web application with a calming, gentle **Morandi color palette** (featuring soft beige, cream yellow, pastel sky blue, and sage green). You can easily copy this code into an `index.html` file and upload it directly to your GitHub repository for GitHub Pages!
